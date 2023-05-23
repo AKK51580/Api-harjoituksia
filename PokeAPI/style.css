@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: bold;
+}
+header {
+  padding: 10px;
+  background-color: #ff8282;
+}
+#search {
+  padding: 3px;
+  border: solid 1px;
+  background: linear-gradient(to right, #ffc4c4, #ffd1ac);
+  color: black;
+}
+.recommendedPokemons {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  background-color: #ff8282;
+}
+.recommendedPokemons p {
+  margin: 0;
+  font-size: 1.5em;
+}
+.showingPokemon {
+  padding: 10px;
+  background-color: #ff8282;
+}
+.pokemonSpriteWrapper {
+  width: 50px;
+  background-color: #ffc4c4;
+
+}
+.pokemonSprite {
+  width: 150px;
+  justify-self: center;
+}
