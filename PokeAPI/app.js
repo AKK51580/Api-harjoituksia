@@ -64,6 +64,7 @@ function displayPokemon(pokemon) {
   showingPokemon.innerHTML = ""; // Clear the existing content
 
   const detailsList = {
+    name: pokemon.name,
     abilities: getPokemonAbilities(pokemon.abilities),
     base_experience: pokemon.base_experience,
     forms: getPokemonForms(pokemon.forms),
@@ -72,14 +73,13 @@ function displayPokemon(pokemon) {
     held_items: getPokemonHeldItems(pokemon.held_items),
     location_area_encounters: pokemon.location_area_encounters,
     moves: getPokemonMoves(pokemon.moves),
-    name: pokemon.name,
     order: pokemon.order,
     past_types: getPokemonPastTypes(pokemon.past_types),
     species: getPokemonSpecies(pokemon.species),
-    sprites: getPokemonSprites(pokemon.sprites),
     stats: getPokemonStats(pokemon.stats),
     types: getPokemonTypes(pokemon.types),
-    weight: pokemon.weight
+    weight: pokemon.weight,
+    sprites: getPokemonSprites(pokemon.sprites)
   };
 
   for (const key in detailsList) {
